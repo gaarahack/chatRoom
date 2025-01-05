@@ -78,7 +78,7 @@
         const roomId = '<%= roomId %>'; 
         const username = '<%= username %>';
 
-        const socket = io.connect('https://localhost');
+const socket = io.connect(window.location.origin);
 
 
         function handleKeyDown(event) {
